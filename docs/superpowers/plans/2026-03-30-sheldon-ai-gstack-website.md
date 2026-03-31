@@ -212,11 +212,16 @@
 - 提交所有文件
 - 推送到 GitHub
 
-**任务 8.5：Vercel 部署**
-- 连接 GitHub 仓库
-- 配置根目录为 `website/`
-- 触发部署
-- 验证线上访问
+**任务 8.5：Vercel 部署** ✅ 完成于 2026-03-31
+- 连接 GitHub 仓库 ✅
+- 配置根目录为 `website/` ✅（踩坑：需手动设置，否则 404）
+- 触发部署 ✅
+- 验证线上访问 ✅ https://sheldon-ai-gstack.vercel.app
+
+**部署踩坑记录：**
+1. Git 仓库根在父目录，网站文件在 `website/` 子目录 → 必须设 Vercel Root Directory = `website`
+2. GitHub 默认分支 `main`，本地推送到 `master` → Vercel 未触发部署，需统一用 `main`
+3. 详见 `docs/superpowers/lessons.md`
 
 ---
 
